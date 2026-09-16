@@ -1,3 +1,5 @@
+const { chromium } = require('@playwright/test');
+
 /** @type {import('@playwright/test').PlaywrightTestConfig} */
 module.exports = {
   testDir: 'tests',
@@ -5,7 +7,7 @@ module.exports = {
   use: {
     headless: true,
     viewport: { width: 1280, height: 720 },
-    actionTimeout: 10000,
+    actionTimeout: 10000
   },
   reporter: [['list'], ['html', { open: 'never' }]],
 };
