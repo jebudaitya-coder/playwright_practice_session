@@ -10,7 +10,7 @@ test('radio button', async({page}) => {
     expect (page.locator('#ctl00_mainContent_rbtnl_Trip_2')).toBeChecked()
 })
 
-test.only('check boxes', async({page}) => {
+test('check boxes', async({page}) => {
     await page.goto("https://rahulshettyacademy.com/dropdownsPractise/");
     await page.locator('#ctl00_mainContent_chk_friendsandfamily').click();
     expect (page.locator('#ctl00_mainContent_chk_friendsandfamily')).toBeChecked()
@@ -18,4 +18,9 @@ test.only('check boxes', async({page}) => {
     expect (page.locator('#ctl00_mainContent_chk_SeniorCitizenDiscount')).toBeChecked()
     await page.locator('#ctl00_mainContent_chk_IndArm').click();
     expect (page.locator('#ctl00_mainContent_chk_IndArm')).toBeChecked()
+})
+test('check blinking text', async({page}) => {
+    await page.goto("https://rahulshettyacademy.com/dropdownsPractise/");
+    const blinkingText = page.locator('[href*="qa-career-accelerator"]');
+    await expect (blinkingText).toHaveAttribute('class','blinkingText')
 })
