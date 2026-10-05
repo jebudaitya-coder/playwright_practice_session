@@ -20,7 +20,7 @@ test('Intercept API Response', async ({ page }) => {
     await page.goto("https://rahulshettyacademy.com/client");
     await page.locator("button[routerlink*='myorders']").click();
 
-    await page.route(routingUrl, route => route.continue({url:hackOrderDetails}));
+    await page.route(routingUrl, route => route.continue({ url: hackOrderDetails }));
     await page.locator("button:has-text('View')").first().click();
     await expect(page.locator("p").last()).toHaveText("You are not authorize to view this order");
 });
