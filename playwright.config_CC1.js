@@ -29,6 +29,8 @@ module.exports = {
         viewport: { width: 1280, height: 720 },
         actionTimeout: 10000,
         screenshot: 'on', //only-on-failure
+        ignoreHTTPSErrors: true,
+        permissions: ['geolocation'],
         // trace: 'on'//retain-on-failure
         // navigationTimeout: 15000
       }
