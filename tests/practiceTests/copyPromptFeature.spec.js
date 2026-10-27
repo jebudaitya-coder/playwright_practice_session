@@ -9,6 +9,6 @@ test('Types of Selectors', async ({ page }) => {
   await expect(page.getByText('Home')).toBeVisible();
   await expect(page.getByAltText('Dilli Diwali Mela')).toBeVisible();
   await expect(page.getByTestId('nav-events')).toBeVisible();
-  await page.locator('//*[@ud="nav-bookings"]').click(); //xpath --- error
+  await page.locator('//*[@id="nav-bookings"]').click(); //xpath --- error
   await page.locator('#nav-events').click(); //css - preferred
 })
