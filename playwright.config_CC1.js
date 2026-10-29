@@ -7,6 +7,7 @@ module.exports = {
   // expect: {
   //   timeout: 10_000
   // },
+  retries: 2,
 
   projects: [
     {
@@ -31,6 +32,7 @@ module.exports = {
         screenshot: 'on', //only-on-failure
         ignoreHTTPSErrors: true,
         permissions: ['geolocation'],
+        //video: 'retain-on-failure'
         // trace: 'on'//retain-on-failure
         // navigationTimeout: 15000
       }
