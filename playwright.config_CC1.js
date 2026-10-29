@@ -8,7 +8,7 @@ module.exports = {
   //   timeout: 10_000
   // },
   retries: 2,
-
+  workers: 5,
   projects: [
     {
       name: 'safari',
