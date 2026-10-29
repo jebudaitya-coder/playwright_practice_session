@@ -1,7 +1,7 @@
 import {test, page, browser, expect} from '@playwright/test'
 
-test.describe.configure({mode:'parallel'});
-test('browser back and forward nagvation',async({page}) => {
+//test.describe.configure({mode:'parallel'});
+test('@Web browser back and forward nagvation',async({page}) => {
     //await page.goto("https://rahulshettyacademy.com/AutomationPractice/");
     await page.goto("https://www.packsize.com")
     await page.goto("https://www.google.com")
@@ -9,7 +9,7 @@ test('browser back and forward nagvation',async({page}) => {
     await page.goForward();
 });
 
-test('hide show elements',async({page}) => {
+test('@Web hide show elements',async({page}) => {
     await page.goto("https://rahulshettyacademy.com/AutomationPractice/");
     await page.locator('#displayed-text').fill('hello! is this text visible?')
     await expect(page.locator('#displayed-text')).toBeVisible();
@@ -25,7 +25,7 @@ test('dialogs/pop-ups',async({page}) => {
     await page.locator('#alertbtn').click();
 });
 
-test('hover text select',async({page}) => {
+test('@Web hover text select',async({page}) => {
     await page.goto("https://rahulshettyacademy.com/AutomationPractice/");
     await page.locator('#mousehover').hover()
 });
