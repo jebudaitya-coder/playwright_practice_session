@@ -7,6 +7,7 @@ module.exports = {
   // expect: {
   //   timeout: 10_000
   // },
+  reporter: 'html',
   use: {
     browserName: 'chromium',
     headless: true,

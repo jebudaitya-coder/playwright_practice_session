@@ -1,0 +1,7 @@
+number of items on this page: 3
+* Coupon Applied
+ United States
+final order id: 6aec07c692a4341c4c047d44
+num check_1 = 10
+orderid is: 6aec07c692a4341c4c047d44
+Thank you for Shopping With Us
