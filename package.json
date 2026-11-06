@@ -8,12 +8,12 @@
     "regression": "npx playwright test",
     "webTests": "npx playwright test --grep @Web",
     "apiTests": "npx playwright test --grep @Api"
-
   },
   "keywords": [],
   "type": "commonjs",
   "devDependencies": {
     "@playwright/test": "^1.64.1",
-    "allure-playwright": "^3.14.0"
+    "allure-playwright": "^3.14.0",
+    "typescript": "^7.0.2"
   }
 }
