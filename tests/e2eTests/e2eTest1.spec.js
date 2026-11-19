@@ -81,5 +81,5 @@ test('simulate and item order end to end', async({page}) => {
     }
     
     const text1 = await page.locator('//p[@class="tagline"]').textContent();
-    console.log(text1);
+    console.log("order id - " + text1);
 });
