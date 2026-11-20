@@ -24,3 +24,9 @@ test('check blinking text', async({page}) => {
     const blinkingText = page.locator('[href*="qa-career-accelerator"]');
     await expect (blinkingText).toHaveAttribute('class','blinkingText')
 })
+
+test('check blinking text case 1', async({page}) => {
+    await page.goto("https://rahulshettyacademy.com/dropdownsPractise/");
+    const blinkingText = page.locator('[href*="qa-career-accelerato"]');
+    await expect (blinkingText).toNotHaveAttribute('class','blinkingText');
+})
