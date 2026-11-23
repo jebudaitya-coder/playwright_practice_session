@@ -7,7 +7,7 @@ import { test, expect } from '@playwright/test';
     await page.getByPlaceholder('enter your passsword').fill('Jebu&357@uto');
     await page.getByRole('button', { name: 'Login', exact: true }).click();
 
-    await expect(page).toHaveURL(/.*\/dashboard\/.*|.*\/dashboard$/);
+    await expect(page).toHaveURL(/.*\/dashboard\/.*|.*\/dashboard$/); //regex
 
     await expect(page.getByRole('button', { name: 'Home', exact: true })).toBeVisible();
     await expect(page.getByRole('button', { name: 'Cart', exact: true })).toBeVisible();
